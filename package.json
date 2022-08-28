@@ -1,0 +1,20 @@
+{
+  "name": "garmin-metric-visualizer",
+  "version": "1.0.0",
+  "description": "Shows graphs for the garmin connect metrics (like race predictions and vo2max, fitnessage, ...)",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfoxg/garmin-metric-visualizer.git"
+  },
+  "author": "dfoxg",
+  "license": "GNU GENERAL PUBLIC LICENSE v3",
+  "bugs": {
+    "url": "https://github.com/dfoxg/garmin-metric-visualizer/issues"
+  },
+  "homepage": "https://github.com/dfoxg/garmin-metric-visualizer#readme",
+  "dependencies": {
+    "d3": "^7.6.1"
+  }
+}
