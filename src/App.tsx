@@ -11,18 +11,25 @@ export default class App extends React.Component<{}, {}> {
       width = svg.attr("width") - margin,
       height = svg.attr("height") - margin;
 
-    console.log(svg)
+    var data = [{ x: 0, y: 0 }, { x: 150, y: 150 }, { x: 300, y: 100 }, { x: 450, y: 30 }, { x: 600, y: 130 }]
+
+    var curveFunc = d3.line()
+      .curve(d3.curveBasis)
+      .x(function (d: any) { return d.x })
+      .y(function (d: any) { return d.y })
+
+    svg.append('path')
+      .attr('d', curveFunc(data))
+      .attr('stroke', 'black')
+      .attr('fill', 'none');
+
 
     svg.append("text")
       .attr("transform", "translate(100,0)")
       .attr("x", 50)
-      .attr("y", 50)
+      .attr("y", 30)
       .attr("font-size", "24px")
-      .text("XYZ Foods Stock Price")
-
-    const chart = d3.IndexChart("", {
-      
-    })
+      .text("Here should come the graphs")
 
   }
 
